@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 function Calculator Application</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div id="calculator"> 
+        <input id="input" readonly/>
+
+        <div class="nums">
+
+        <button onclick="updateDisplay('+')" class="operator">+</button>
+        <button onclick="updateDisplay('1')">1</button>
+        <button onclick="updateDisplay('2')">2</button>
+        <button onclick="updateDisplay('3')">3</button>
+        <button onclick="updateDisplay('-')" class="operator">-</button>
+        <button onclick="updateDisplay('4')">4</button>
+        <button onclick="updateDisplay('5')">5</button>
+        <button onclick="updateDisplay('6')">6</button>
+        <button onclick="updateDisplay('*')" class="operator">*</button>
+        <button onclick="updateDisplay('7')">7</button>
+
+        <button onclick="updateDisplay('8')">8</button>
+        <button onclick="updateDisplay('9')">9</button>
+        <button onclick="updateDisplay('/')" class="operator">/</button>
+        <button onclick="updateDisplay('0')">0</button>
+        <button onclick="updateDisplay('.')">.</button>
+
+        </div>
+
+        <button onclick="calculate()" id="equals">=</button>
+        <button onclick="clearAll()" id="clear">CE</button>
+        
+        
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
